@@ -38,7 +38,7 @@ build_auth:
 ## build_front: builds the front end binary
 build_front:
 	@echo Building front end binary...
-	cd ..\front-end && set CGO_ENABLED=0&& set GOOS=windows&& go build -o ${FRONT_END_BINARY} ./cmd/web
+	cd ..\front-end && set CGO_ENABLED=0&& set GOOS=windows&& go build -o ${FRONT_END_BINARY} ./cmd
 	@echo Done!
 
 ## start: starts the front end
