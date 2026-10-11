@@ -1,0 +1,8 @@
+# Ignore local database volume data
+project/db-data/
+
+.env
+
+# Compiled Go binaries
+*App
+*App.exe
