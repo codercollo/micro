@@ -46,7 +46,7 @@ func (app *Config) gRPCListen() {
 
 	logs.RegisterLogServiceServer(s, &LogServer{Models: app.Models})
 
-	log.Printf("gRPC Server started on port %s", gRPCPort)
+	log.Printf("gRPC Server started on port %s", gPRCPort)
 
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("Failed to listen for gRPC: %v", err)
